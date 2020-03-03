@@ -1,0 +1,1 @@
+<view><view class="tab-item-container map_container"><map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" data-event-opts="{{[['markertap',[['makertap',['$event']]]],['tap',[['handlecilck',['$event']]]]]}}" bindmarkertap="__e" bindtap="__e"></map></view></view>

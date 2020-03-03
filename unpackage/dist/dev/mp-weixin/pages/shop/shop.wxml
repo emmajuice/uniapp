@@ -1,0 +1,1 @@
+<view><view data-event-opts="{{[['tap',[['clickme',['$event']]]]]}}" bindtap="__e">点击我可以看到底部弹框的出现tt</view><paymodal vue-id="1" cart="{{cartInfo}}" bind:__l="__l"></paymodal></view>
