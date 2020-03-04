@@ -1,9 +1,6 @@
 <template>
 	<view>
-		<cu-custom bgColor="bg-gradual-blue" :isBack="true">
-		    <!-- <block slot="backText">返回</block> -->
-		    <block slot="content">导航栏</block>
-		</cu-custom>
+		
 		<view class="commodity_screen" @click="hideModal" v-if="showModalStatus"></view>
 		<view :animation="animationData" class="commodity_attr_box" v-if="showModalStatus">{{cart}}</view>
 	</view>

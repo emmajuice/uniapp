@@ -14,10 +14,10 @@
 						};
 						// #endif
 						// #ifdef MP-WEIXIN
-						console.log("flsd",e)
+						// console.log("flsd",e)
 						Vue.prototype.StatusBar = e.statusBarHeight;
 						let custom = wx.getMenuButtonBoundingClientRect();
-						console.log('custom',custom)
+						// console.log('custom',custom)
 						Vue.prototype.Custom = custom;
 						Vue.prototype.CustomBar = custom.bottom + custom.top - e.statusBarHeight;
 						// #endif		

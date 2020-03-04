@@ -1,8 +1,23 @@
 <template>
 	<view>
-		<view class="tab-item-container map_container">
-		  <map class="map" id="map" :longitude="longitude" :latitude="latitude" scale="14" show-location="true" :markers="markers" @markertap="makertap" @tap="handlecilck"></map>
-		</view>
+		<cu-custom bgColor="bg-gradual-blue">></block>
+		    <block slot="content">水联盟</block>
+		</cu-custom>
+		<van-tabs swipeable animated sticky='true' :active="activeid" @change="onChange">
+		  <van-tab title="地图">
+			<view class="tab-item-container map_container">
+			  <map class="map" id="map" :longitude="longitude" :latitude="latitude" scale="14" show-location="true" :markers="markers" @markertap="makertap"></map>
+			</view>
+		  </van-tab>
+		  <van-tab title="列表">
+			<view class="tab-item-container" v-if="markersData">
+			  <view class="map_text" v-for="(item,index) in markersData" :key="index" @tap="handlemarker(item)">
+				<p class="name">{{item.name}}</p>
+				<p>{{item.address}}</p>
+			  </view>
+			</view>
+		  </van-tab>
+		</van-tabs>
 	</view>
 </template>
 
@@ -90,10 +105,6 @@
 			  console.log("===a=a==a",e)
 			  this.activeid = e.mp.detail.index;
 			},
-			handlecilck(){
-			  console.log("i am here")
-			  this.activeid = 1;
-			},
 			bindInput(e){
 			  var that = this;
 			  var url = '../inputtips/main';
@@ -113,22 +124,22 @@
 			      desc: data[i].address
 			    };
 			  console.log("that.textData",data[0])
-			  this.$fly.request({
-			    method:"get", //post/get 请求方式
-			    url:"/test/test",
-			    // data:{
-			    //   "latitude":data[0].latitude,
-			    //   "longitude":data[0].longitude
-			    // },
-			    body:{
-			      "latitude":data[0].latitude,
-			      "longitude":data[0].longitude
-			    }
-			    }).then(res =>{
-			    console.log("r",res)
-			    }).catch(res=>{
-			      console.log("55555报错了",res)
-			    })
+			  // this.$fly.request({
+			  //   method:"get", //post/get 请求方式
+			  //   url:"/test/test",
+			  //   // data:{
+			  //   //   "latitude":data[0].latitude,
+			  //   //   "longitude":data[0].longitude
+			  //   // },
+			  //   body:{
+			  //     "latitude":data[0].latitude,
+			  //     "longitude":data[0].longitude
+			  //   }
+			  //   }).then(res =>{
+			  //   console.log("r",res)
+			  //   }).catch(res=>{
+			  //     console.log("55555报错了",res)
+			  //   })
 			},
 			changeMarkerColor: function(data,i){
 			  console.log(data,i)
@@ -175,6 +186,57 @@
 	}
 </script>
 
-<style lang="scss">
-
+<style lang="scss" scpoed>
+.section{
+  height:60px;
+  width: 100%;
+}
+.section input{
+  width:90%;
+  margin:5px auto;
+  border:1px solid #c3c3c3;
+  height:30px;
+  border-radius: 3px;
+  padding: 0 5px;
+}
+.tab-item-container{
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+}
+.map_container{
+  // position: absolute;
+  margin-top: 10rpx;
+  // left: 0;
+  // right: 0;
+}
+.map{
+  width: 100%;
+  height: 100vh;
+}
+.map_text{
+  // position: absolute;
+  // left: 0;
+  // right: 0;
+  // bottom: 0px;
+  margin-top: 10rpx;
+  background: #ffffff;
+  padding: 0 15px;
+  border-bottom: 1px solid #ccc;
+  p{
+    margin: 5px 0;
+    display: block;
+    font-size:12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .testBtn{
+    background: orange;
+  }
+  .name{
+    font-size:28rpx;
+    font-weight: 600;
+  }
+}
 </style>

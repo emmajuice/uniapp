@@ -1,1 +1,1 @@
-<view></view>
+<view><view data-event-opts="{{[['tap',[['test',['$event']]]]]}}" class="test" bindtap="__e">点击一次啊</view></view>

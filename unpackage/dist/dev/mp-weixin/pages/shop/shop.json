@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "店铺详情",
   "usingComponents": {
-    "paymodal": "/components/CartModal"
+    "paymodal": "/components/CartModal",
+    "shop-header": "/components/shop/header/header"
   }
 }

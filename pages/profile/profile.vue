@@ -1,6 +1,8 @@
 <template>
 	<view>
-		
+		<view class="test" @click="test">
+			点击一次啊
+		</view>
 	</view>
 </template>
 
@@ -8,8 +10,15 @@
 	export default {
 		data() {
 			return {
-				
+				haha:false
 			};
+		},
+			
+		methods:{
+			test(){
+				
+				console.log(this.haha)
+			}
 		}
 	}
 </script>
