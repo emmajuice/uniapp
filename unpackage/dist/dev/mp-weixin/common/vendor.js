@@ -9543,31 +9543,7 @@ module.exports = {"_from":"@dcloudio/uni-stat@alpha","_id":"@dcloudio/uni-stat@2
 
 /***/ }),
 
-/***/ 7:
-/*!***************************************************************************!*\
-  !*** E:/workspace/小程序/uniapp/unidemo1/uniapp/pages.json?{"type":"style"} ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/home/home": { "navigationBarTitleText": "首页" }, "pages/profile/profile": { "navigationBarTitleText": "个人中心" }, "pages/category/category": { "navigationBarTitleText": "分类" }, "pages/cart/cart": { "navigationBarTitleText": "购物车" }, "pages/index/index": { "navigationBarTitleText": "simba" }, "pages/shop/shop": { "navigationBarTitleText": "店铺详情" }, "components/shop/header/header": {} }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8", "navigationStyle": "custom" } };exports.default = _default;
-
-/***/ }),
-
-/***/ 8:
-/*!**************************************************************************!*\
-  !*** E:/workspace/小程序/uniapp/unidemo1/uniapp/pages.json?{"type":"stat"} ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "" };exports.default = _default;
-
-/***/ }),
-
-/***/ 95:
+/***/ 66:
 /*!******************************************************************!*\
   !*** E:/workspace/小程序/uniapp/unidemo1/uniapp/common/testdata.js ***!
   \******************************************************************/
@@ -9774,6 +9750,30 @@ var categoryData = [
   commentData: commentData,
   goodsData: goodsData,
   categoryData: categoryData };exports.default = _default;
+
+/***/ }),
+
+/***/ 7:
+/*!***************************************************************************!*\
+  !*** E:/workspace/小程序/uniapp/unidemo1/uniapp/pages.json?{"type":"style"} ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/home/home": { "navigationBarTitleText": "首页" }, "pages/profile/profile": { "navigationBarTitleText": "个人中心" }, "pages/category/category": { "navigationBarTitleText": "分类" }, "pages/cart/cart": { "navigationBarTitleText": "购物车" }, "pages/index/index": { "navigationBarTitleText": "simba" }, "pages/shop/shop": { "navigationBarTitleText": "店铺详情" }, "components/shop/header/header": {} }, "globalStyle": { "navigationBarTextStyle": "black", "navigationBarTitleText": "uni-app", "navigationBarBackgroundColor": "#F8F8F8", "backgroundColor": "#F8F8F8", "navigationStyle": "custom" } };exports.default = _default;
+
+/***/ }),
+
+/***/ 8:
+/*!**************************************************************************!*\
+  !*** E:/workspace/小程序/uniapp/unidemo1/uniapp/pages.json?{"type":"stat"} ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "" };exports.default = _default;
 
 /***/ })
 
