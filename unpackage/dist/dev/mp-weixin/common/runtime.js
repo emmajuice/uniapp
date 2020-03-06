@@ -104,11 +104,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/CartModal":1};
+/******/ 		var cssChunks = {"components/uni-icons/uni-icons":1,"components/hx-comment/hx-comment":1,"components/uni-number-box/uni-number-box":1,"components/uni-rate/uni-rate":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"static/styles/colorui/components/cu-custom":"static/styles/colorui/components/cu-custom","components/CartModal":"components/CartModal"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"static/styles/colorui/components/cu-custom":"static/styles/colorui/components/cu-custom","components/uni-icons/uni-icons":"components/uni-icons/uni-icons","components/hx-comment/hx-comment":"components/hx-comment/hx-comment","components/uni-number-box/uni-number-box":"components/uni-number-box/uni-number-box","components/uni-rate/uni-rate":"components/uni-rate/uni-rate"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

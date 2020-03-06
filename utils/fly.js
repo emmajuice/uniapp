@@ -10,8 +10,6 @@ fly.interceptors.request.use((request) => {
     mask:true
   });
   console.log(request);
-  // request.headers["X-Tag"] = "flyio";
-  // request.headers['content-type']= 'application/json';
   request.headers = {
     "X-Tag": "flyio",
     'content-type': 'application/json',

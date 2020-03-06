@@ -38,7 +38,6 @@
 		},
 		watch:{
 			showStoreBox(val,oldVal){
-				console.log("showStoreBox--watch  ",val,oldVal)
 				if(val == true){
 					this.showStoreBoxFunc();
 				}else{

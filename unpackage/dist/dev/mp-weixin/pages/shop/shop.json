@@ -1,7 +1,9 @@
 {
   "navigationBarTitleText": "店铺详情",
   "usingComponents": {
-    "paymodal": "/components/CartModal",
+    "hx-comment": "/components/hx-comment/hx-comment",
+    "uni-icons": "/components/uni-icons/uni-icons",
+    "hx-number-box": "/components/uni-number-box/uni-number-box",
     "shop-header": "/components/shop/header/header"
   }
 }

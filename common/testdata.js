@@ -177,7 +177,7 @@ const goodsData= [{
 	
 //商品种类数据
 const categoryData = [
-		{id: 1,name: '生鲜果蔬'},
+		{id: 1,name: 'taocan '},
 		{id: 2,name: '鲜花绿植'},
 		{id: 3,name: '美食1'},
 		{id: 4,name: '美食2'},

@@ -1,12 +1,14 @@
 {
   "pages": [
+    "pages/cards/cards",
     "pages/home/home",
     "pages/profile/profile",
     "pages/category/category",
     "pages/cart/cart",
     "pages/index/index",
     "pages/shop/shop",
-    "components/shop/header/header"
+    "components/shop/header/header",
+    "pages/cards/cardDetail"
   ],
   "subPackages": [],
   "window": {
@@ -45,5 +47,5 @@
     "van-popup": "wxcomponents/vant/popup/index",
     "cu-custom": "/static/styles/colorui/components/cu-custom"
   },
-  "sitemapLocation": "sitemap24.json"
+  "sitemapLocation": "sitemap48.json"
 }
