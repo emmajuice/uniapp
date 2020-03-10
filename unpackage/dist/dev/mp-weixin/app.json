@@ -46,6 +46,5 @@
     "van-rate": "wxcomponents/vant/rate/index",
     "van-popup": "wxcomponents/vant/popup/index",
     "cu-custom": "/static/styles/colorui/components/cu-custom"
-  },
-  "sitemapLocation": "sitemap48.json"
+  }
 }

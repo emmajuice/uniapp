@@ -16,7 +16,7 @@ export function getUserInfo() {
  */
 export function getVipCard() {
     return fly({
-        url: `${baseUrl}/getUserInfo`,
+        url: `${baseUrl}/test/test`,
         method: 'get',
         needToken: true
     })

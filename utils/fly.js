@@ -1,6 +1,6 @@
 import Fly from 'flyio/dist/npm/wx'
 const fly = new Fly()
-const host = "http://localhost:3000"
+// const host = "http://localhost:3000"
 // const host = "http://192.168.0.103:8889"
 let token = wx.getStorageSync('token')
 //添加请求拦截器
@@ -34,7 +34,7 @@ fly.interceptors.request.use((request) => {
   });
   request.body = {
     ...request.body,
-    ...authParams
+    ...authParams 
   }
   return request;
 });
@@ -54,6 +54,6 @@ fly.interceptors.response.use(
   }
 );
 
-fly.config.baseURL = host;
+// fly.config.baseURL = host;
 
 export default fly;

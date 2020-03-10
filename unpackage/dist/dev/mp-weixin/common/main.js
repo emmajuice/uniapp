@@ -11,7 +11,7 @@
 var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
 var _App = _interopRequireDefault(__webpack_require__(/*! ./App */ 9));
 var _fly = _interopRequireDefault(__webpack_require__(/*! ./utils/fly.js */ 15));
-var _store = _interopRequireDefault(__webpack_require__(/*! ./store/store.js */ 17));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var cuCustom = function cuCustom() {return __webpack_require__.e(/*! import() | static/styles/colorui/components/cu-custom */ "static/styles/colorui/components/cu-custom").then(__webpack_require__.bind(null, /*! ./static/styles/colorui/components/cu-custom.vue */ 114));};
+var _index = _interopRequireDefault(__webpack_require__(/*! ./store/index.js */ 17));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var cuCustom = function cuCustom() {return __webpack_require__.e(/*! import() | static/styles/colorui/components/cu-custom */ "static/styles/colorui/components/cu-custom").then(__webpack_require__.bind(null, /*! ./static/styles/colorui/components/cu-custom.vue */ 123));};
 
 _vue.default.component('cu-custom', cuCustom);
 _vue.default.config.productionTip = false;
@@ -19,11 +19,11 @@ _vue.default.config.productionTip = false;
 _App.default.mpType = 'app';
 
 _vue.default.prototype.$fly = _fly.default;
-_vue.default.prototype.$Store = _store.default;
+_vue.default.prototype.$Store = _index.default;
 
 var app = new _vue.default(_objectSpread({},
 _App.default, {
-  store: _store.default }));
+  store: _index.default }));
 
 createApp(app).$mount();
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["createApp"]))
